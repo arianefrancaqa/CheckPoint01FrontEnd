@@ -16,7 +16,11 @@ header {
 }
 
 .cidade {
-
+    font-family: 'Great Vibes', cursive;
+    font-size: 200%;
+    
+    display: flex;
+    justify-content: center;
 }
 
 header ul {
