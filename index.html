@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <div class="cidade">Porto Alegre</div>
+        <div class="cidade" id="home"><a href="https://prefeitura.poa.br/">Porto Alegre</a></div>
         <ul class="botoes-nav">
-            <li class="botao-menu"><a href="">Home</a></li>
-            <li class="botao-menu"><a href="">Curiosidades</a></li>
-            <li class="botao-menu"><a href="">Vídeo</a></li>
+            <li class="botao-menu"><a href="#home">Home</a></li>
+            <li class="botao-menu"><a href="#curiosidades">Curiosidades</a></li>
+            <li class="botao-menu"><a href="#video">Vídeo</a></li>
         </ul>
     </header>
 
@@ -23,25 +23,54 @@
         <div class="capa"></div>
 
         <div class="container-curiosidades">
-            <h2>Curiosidades da Cidade</h2>
+            <h2 id="curiosidades">Curiosidades da Cidade</h2>
             <div class="curiosidades-cards">
-                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel ratione eligendi
-                    corporis deleniti neque dolor voluptas, iure molestiae esse natus voluptatum alias eum, modi aliquam
-                    facilis aut atque quos!</div>
-                <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam
-                    voluptatibus facilis sapiente, aperiam porro eos aspernatur! Pariatur, iusto? Doloribus voluptatum
-                    voluptatibus officia ut quae atque odio ea reiciendis quaerat.</div>
-                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia dolorem
-                    nemo, sit ipsam fugiat alias itaque repellat sint id et. Dolorum, eius! Ipsam minus porro deserunt
-                    corrupti eos. Culpa!</div>
+                <div class="card">
+                    <div class="card__background">
+                        <a href="http://www.pordosolguaiba.com.br/"><img src="img/por-do-sol-guaiba.png"
+                                alt="Por do sol no rio Guaíba"></a>
+                    </div>
+                    <div class="card__texto">Quando você chegar a Porto Alegre e perguntar a um dos simpáticos moradores
+                        gaúchos sobre os lugares mais bonitos para ver o pôr do sol, ouvirá com certeza que o lugar
+                        ideal para ver esse show da natureza é às margens do Rio Guaíba.
+                        E olha, de fato, é mesmo um lugar lindo e o espetáculo natural é grandioso. Tanto é, que o pôr
+                        do sol de Guaíba já se tornou uma tradição gaúcha..</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__background">
+                        <a
+                            href="https://apureguria.com/america-do-sul/brasil/a-rua-mais-bonita-do-mundo-fica-em-porto-alegre/">
+                            <img src="img/rua-mais-bonita-do-mundo.png" alt=""></a>
+                    </div>
+                    <div class="card__texto">E que tal um passeio pela rua mais bonita do mundo?! A rua chama-se Gonçalo
+                        de Carvalho, está entre os bairros de Floresta e Independência, e não ganhou este apelido à toa.
+                        Toda a sua extensão é coberta por imensas árvores, todas super bem cuidadas e com um serviço de
+                        arborização exclusivo. Fazendo com que se tornasse, em 2006, Patrimônio Histórico, Cultural,
+                        Ecológico e Ambiental do município.</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__background">
+                        <a href="http://www.ccmq.com.br/"><img src="img/casa-cultura-mario-quintana2.png" alt=""></a>
+                    </div>
+                    <div class="card__texto">Outro passeio para lá de histórico e curioso é a Casa de Cultura Mário
+                        Quintana, que até os anos 80 era um hotel. O Hotel Majestic foi construído entre 1918 e 1933,
+                        sendo o primeiro prédio de cimento armado da cidade. A sua estrutura era considerada ousada para
+                        a época e isso atraiu a atenção de moradores e turistas que chegavam a capital.
+                        Atualmente, os visitantes podem conferir diversas obras e eventos periódicos (programação
+                        completa no site). Sendo assim, não deixe de fazer uma visitinha a este lugar incrível.
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
         <div class="container-video">
-            <h2>Vídeo da cidade</h2>
+            <h2 id="video">Vídeo da cidade</h2>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/_qphlaln96I"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/_qphlaln96I" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -50,9 +79,16 @@
     </main>
 
     <footer>
-        <div><a href="https://www.linkedin.com/in/ariane-fran%C3%A7a-5377b7ba/"><img src="img/LinkedIn.png" alt=""></a>
+        <div class="botao__perfil">
+            <a href="https://www.linkedin.com/in/ariane-fran%C3%A7a-5377b7ba/">
+                <img src="img/LinkedIn.png" alt="">
+            </a>
         </div>
-        <div><a href="https://github.com/arianefrancaqa"><img src="img/github.png" alt=""></a></div>
+        <div class="botao__perfil">
+            <a href=" https://github.com/arianefrancaqa">
+            <img src="img/github.png" alt="">
+            </a>
+        </div>
     </footer>
 
 </body>

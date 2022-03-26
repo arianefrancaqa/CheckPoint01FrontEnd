@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 
 html {
   font-size: 50px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 * {
@@ -17,10 +18,8 @@ ul {
   list-style: none;
 }
 
-/* font-family: "Roboto", sans-serif; */
-/* font-family: 'Great Vibes', cursive; */
 header {
-  background-color: #DAB88B;
+  background-color: #dab88b;
   height: 100px;
   width: 100%;
   display: flex;
@@ -29,11 +28,21 @@ header {
 
 .cidade {
   font-size: 1.5rem;
+  font-family: "Playfair Display SC", serif;
   display: flex;
   justify-content: flex-start;
   width: 50%;
   align-self: center;
   margin-left: 3%;
+}
+
+.cidade > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.cidade > a:hover {
+  transform: scale(1.2);
 }
 
 .botoes-nav {
@@ -43,6 +52,7 @@ header {
   font-size: 0.5rem;
   width: 50%;
   font-weight: bold;
+  font-family: "Playfair Display SC", serif;
 }
 
 .botoes-nav > li {
@@ -56,79 +66,183 @@ header {
 .botao-menu {
   height: 49%;
   width: 20%;
-  background-color: #F3E9DD;
+  background-color: #f3e9dd;
   border-radius: 10%;
   border: 2px solid #000000;
   padding-top: 0.9%;
 }
 
+.botao-menu:hover {
+  transform: scale(1.2);
+}
+
 .botao-menu > a {
   color: #000000;
+  text-decoration: none;
 }
 
 .capa {
   width: 100%;
   height: 500px;
-  background-image: url("../img/capaPoa.jpg"); 
-  background-position: center; 
+  background-image: url("../img/capaPoa.jpg");
+  background-position: center;
   background-size: cover;
 }
 
 .curiosidades-cards {
   width: 100%;
-  height: 650px;
-  background-color: #F3E9DD;
+  background-color: #f3e9dd;
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
- h2 {
+h2 {
   color: #000000;
   font-size: 0.8rem;
   margin: 2%;
 }
 
 .card {
-  width: 29.3%;
-  height: 90%;
-  background-color: grey;
+  width: 30%;
+  height: 700px;
+  background-color: rgb(206, 198, 198);
   border-radius: 5%;
   margin: 5px;
   font-size: 0.5rem;
-  padding: 1%;
-}
-
-.container-video {
-  width: 100%;
-  height: 800px;
-  background-color: #FDF6EC;
+  padding: 2%;
   display: flex;
   flex-direction: column;
 }
 
-.container-principal {
- background-color: #F3E9DD;
+.card__background {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover;
 }
 
+.card__background > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__background > a > img:hover {
+  border: 3px solid rgb(255, 252, 252);
+  transform: scale(1.1);
+}
+
+.container-video {
+  width: 100%;
+
+  background-color: #fdf6ec;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__texto {
+  font-size: 0.4rem;
+}
+
+.container-principal {
+  background-color: #f3e9dd;
+}
 
 .video {
   width: 100%;
-  height: 600px;
-  background-color: #FDF6EC;
+  background-color: #fdf6ec;
   display: flex;
   justify-content: center;
 }
 
 .video > iframe {
   width: 80%;
-  height: 600px;
+  height: 800px;
   display: flex;
+  padding: 5%;
+}
+
+.botao__perfil {
+  margin-top: 20px;
+}
+
+.botao__perfil:hover {
+  transform: scale(1.1);
 }
 
 footer {
   width: 100%;
-  height: 200px;
-  background-color: #B7CADB;
+  background-color: #b7cadb;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  /*Smartphones*/
+
+  html {
+    font-size: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .cidade {
+    width: 100%;
+    font-size: 1.7rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .botoes-nav {
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 1%;
+  }
+
+  .botao-menu {
+    width: 33.3%;
+    height: 100%;
+  }
+
+  .curiosidades-cards {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 80%;
+    height: 80%;
+    font-size: 1.5rem;
+  }
+
+  .card__texto {
+    font-size: 0.8rem;
+  }
+
+  .container-video {
+    padding: 5%;
+  }
+
+  .video > iframe {
+    height: 200px;
+  }
 }
